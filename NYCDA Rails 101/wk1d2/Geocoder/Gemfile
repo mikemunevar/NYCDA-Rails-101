@@ -1,0 +1,12 @@
+source 'http://rubygems.org' # Tells bundler where to find the gems
+
+# Ruby comes in different versions, which can optionally
+
+# Ruby version
+ruby('2.3.0')
+
+# Rails
+gem('rails', '4.2.7')
+
+# Geocoder
+gem ('geocoder')
