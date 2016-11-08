@@ -1,4 +1,3 @@
-
 # Problem 2
 # Create a class called Homework.
 # Add a method to Homework called shout that takes a string as a parameter and returns the string in all caps. For example, shout('Hello') should return 'HELLO'.
@@ -30,22 +29,11 @@ class Homework
         end
     end
     
+    s
     def calendar(array_1, array_2)
-    #return {'Independence Day' => '4 July', 'Halloween' => '31 October', 'Christmas' => '25 December'}.
-        puts "Output the arrays: #{array_1}, #{array_2}"
- #       my_hash = { "dog" => "biscuit", "cat" => "chow", :age => 7 }
-        
-        my_hash = {array_1[0] => array_2[0]}
-        my_hash = {array_1[1] => array_2[1]}
-        my_hash = {array_1[2] => array_2[2]}
-
-        array_1.each do |key|
-#          puts("#{key}")
-          my_hash = key
-        end
-#       puts my_hash
-        my_hash
+        my_hash = Hash[array_1.zip array_2]
     end
+
 
 end
 
@@ -60,3 +48,6 @@ calendar_names = ['Independence Day', 'Halloween', 'Christmas']
 calendar_dates = ['4 July', '31 October', '25 December']
 
 puts myHomework.calendar(calendar_names, calendar_dates)
+
+
+

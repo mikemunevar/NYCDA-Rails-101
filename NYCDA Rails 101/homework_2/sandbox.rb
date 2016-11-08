@@ -111,6 +111,7 @@ else
     puts ('Wow, big class!')
 end
 
+#Use .push to add items to an array
 names.push("Mike")
 puts (names)
 
@@ -158,6 +159,7 @@ grades = {
 
 grades["Fido"] = 8
 
+#grades is a hash
 grades.each do |key, value|
     puts( "#{key}'s grade is #{value}")
 end

@@ -8,5 +8,5 @@ def add(x, y)
     result = x + y    
 end
 
-
-puts( add(1,2))
+sum = add(1,2)
+puts(sum)
