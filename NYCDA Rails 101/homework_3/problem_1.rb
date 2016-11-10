@@ -8,17 +8,30 @@ class Utility
     
     def count_words(input)
         my_array = input.split(' ') 
-        my_array.length
+        puts my_array.length
         
         my_hash = Hash.new
         
         # my_hash = { "hello" => 1}
 
-        
-        
         my_array.each do |i|
-          my_hash = i
+            my_hash[i] = 0
         end
+        
+        # j = 0
+        # my_array.each do |i|
+        #     if my_hash[i] = my_array[j]
+        #         my_hash[i] = 0
+        #         puts "J = #{j}"
+        #     end
+        #   j = j+1
+        # end
+        
+        # array_1.each do |element|
+        #     # puts element
+        #     my_hash[element] = array_2[i]
+        #     i = i + 1
+        # end
         
         
         # my_hash.each {|key, value| 

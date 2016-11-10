@@ -29,11 +29,23 @@ class Homework
         end
     end
     
-    s
+    
     def calendar(array_1, array_2)
         my_hash = Hash[array_1.zip array_2]
     end
+    
 
+    def calendar2(array_1, array_2)
+        my_hash = {}    
+
+        i = 0
+        array_1.each do |element|
+            # puts element
+            my_hash[element] = array_2[i]
+            i = i + 1
+        end
+       my_hash 
+    end
 
 end
 
@@ -49,5 +61,6 @@ calendar_dates = ['4 July', '31 October', '25 December']
 
 puts myHomework.calendar(calendar_names, calendar_dates)
 
+puts myHomework.calendar2(calendar_names, calendar_dates)
 
 
