@@ -14,18 +14,20 @@ class Utility
         
         # my_hash = { "hello" => 1}
 
+        # Initialize the hash to zero
         my_array.each do |i|
             my_hash[i] = 0
         end
-        
-        # j = 0
-        # my_array.each do |i|
-        #     if my_hash[i] = my_array[j]
-        #         my_hash[i] = 0
-        #         puts "J = #{j}"
-        #     end
-        #   j = j+1
-        # end
+     
+        # Set the hash to actual counts   
+        j = 0
+        my_array.each do |i|
+            if my_hash[i] = my_array[j]
+                my_hash[i] = 
+                puts "J = #{j}"
+            end
+          j = j+1
+        end
         
         # array_1.each do |element|
         #     # puts element
