@@ -14,8 +14,6 @@ class Triangle
     # Add a method to Triangle called kind that returns a symbol indicating whether the triangle is equilateral, isosceles, or scalene. 
             
     def kind
-
-        
         if(side_1 == side_2 && side_2 == side_3)
             :equilateral
         elsif(side_1 == side_2 || side_2 == side_3)

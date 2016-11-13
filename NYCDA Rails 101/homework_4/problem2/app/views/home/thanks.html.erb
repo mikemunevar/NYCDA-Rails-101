@@ -1,0 +1,17 @@
+<!--Upon submission of the contact form, bring the user to a page at the URL /thanks that displays the name, email, and message that was entered on the submitted form.-->
+
+
+<h1> Thanks </h1>
+<p>
+    Thank you for your submission!  
+</p>
+<p> Here are the details that we received: </p>
+
+<ul>
+    <% params.each do |name, value| %>
+        <p><%= name + ": " + value %></p>
+    <% end %>
+</ul>
+
+
+<p> Return to <a href="/">home</a></p>

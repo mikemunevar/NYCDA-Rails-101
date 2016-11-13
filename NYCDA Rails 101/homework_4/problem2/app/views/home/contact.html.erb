@@ -1,0 +1,55 @@
+<!--Create a page accessible at the URL /contact that contains a form with fields for a name, email, and message.-->
+
+<h1>Contact</h1>
+
+
+<!--<h2> Params </h2>-->
+<!--<p> <%= params %></p>-->
+<!--<p> <%= params["name"] %> </p>-->
+<!--<p> <%= params["animal"] %> </p>-->
+<!--<p> <%= params["owner"] %> </p>-->
+
+<!--<p> <%= params[:name] %> </p>-->
+<!--<p> <%= params[:animal] %> </p>-->
+<!--<p> <%= params[:owner] %> </p>-->
+
+<!--<ul>-->
+<!--    <% params.each do |name, value| %>-->
+<!--        <%= name + value %>-->
+<!--    <% end %>-->
+<!--</ul>-->
+
+
+
+
+
+<!--<form method="POST" action="hello">-->
+<!--    <label for="title">Title</label>-->
+<!--    <input type="text" name="title">-->
+    
+<!--    <label for="name">Name</label>-->
+<!--    <input type="text" name="name">-->
+    
+<!--    <input type="submit">-->
+<!--</form>-->
+
+<!--Use the form helper to do this-->
+
+<h2>Complete the form below to contact us.</h2>
+<%= form_tag('/contact') do %>
+    <div>
+        First Name: <%= text_field_tag(:name, '', placeholder: 'First and Last Name') %>
+    </div>
+    <div>
+        Last Name: <%= text_field_tag(:email,   '', placeholder: 'Email Address' ) %>
+    </div>
+    <div>
+        Message:   <%= text_field_tag(:message,   '', placeholder: 'Enter your message here.' ) %>
+    </div>
+    
+    <%= submit_tag('Submit Contact Form') %>
+<% end %>
+
+
+
+<p> Return to <a href="/">home</a></p>
