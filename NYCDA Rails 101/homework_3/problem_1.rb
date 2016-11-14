@@ -12,8 +12,6 @@ class Utility
         
         my_hash = Hash.new
         
-        # my_hash = { "hello" => 1}
-
         # Initialize the hash to zero
         my_array.each do |i|
             my_hash[i] = 0
@@ -26,19 +24,9 @@ class Utility
                 my_hash[i] = 
                 puts "J = #{j}"
             end
-          j = j+1
+            j = j+1
         end
         
-        # array_1.each do |element|
-        #     # puts element
-        #     my_hash[element] = array_2[i]
-        #     i = i + 1
-        # end
-        
-        
-        # my_hash.each {|key, value| 
-        #     puts "#{key} is #{value}" 
-        # }
         my_hash
     end
 end
@@ -46,8 +34,12 @@ end
 
 phrase = "it was the best of times, it was the worst of times."
 
+phrase2 = "the good the bad and the ugly"
+
 my_utility = Utility.new
 
 puts my_utility.count_words(phrase)
 
-# puts my_utility.count_words('the good and the bad and the ugly')
+puts my_utility.count_words(phrase2)
+
+

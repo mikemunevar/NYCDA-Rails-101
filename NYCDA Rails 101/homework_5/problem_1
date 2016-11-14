@@ -1,0 +1,41 @@
+Problem 1
+Create a schema for a popular website. List the names of the database tables necessary to represent the data that the site stores as well as the name and type of each column in each table. Choose a schema that includes at least one one-to-many relationship and one many-to-many relationship. You can use any tool you like to create the schema and submit a text or image file as your answer.
+
+
+PERSON
+Seller? = boolean
+buyer? = boolean
+
+
+
+ADDRESS
+Name
+Street number
+Street name
+Company
+City
+Postcode
+State/Province
+Country
+
+
+
+
+PRODUCT
+Name
+Short description
+long description
+Images:array         #I want an infinite number of product images
+Price
+
+
+
+
+PURCHASES ORDERS
+Invoice number
+list of products:array of product_id
+buyer_id
+
+
+
+

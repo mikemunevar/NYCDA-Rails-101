@@ -1,0 +1,15 @@
+Problem 2
+Create a new Rails app.
+Remember to commit the code for your new Rails app immediately after creating it! Any changes you make to the newly initialized app should be committed after the initial commit so I can easily see just the code you wrote.
+Create models for the schema you created in Problem 1. (You don’t have to worry about creating associations between the models yet, though—just the models themselves.)
+Create an additional migration that modifies the table for one of your models in some way—for example, you could add some additional columns.
+Run the migrations for your app.
+Open the Rails console and practice CRUD operations using your models.
+Create a file called crud-operations.rb in the top-level directory of your app and add the code for at least ten different CRUD operations that you practiced in the console.
+You may find the following Rails documentation useful for CRUD operations you can try:
+
+ActiveRecord::Persistence (Links to an external site.)
+ActiveRecord::QueryMethods (Links to an external site.)
+ActiveRecord::FinderMethods (Links to an external site.)
+ActiveRecord::Calculations (Links to an external site.)
+
