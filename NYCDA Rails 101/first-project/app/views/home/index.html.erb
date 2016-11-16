@@ -6,4 +6,18 @@
     <%= params[:last_name] %>
 </p>
 
+<h1>Users</h1>
+
+
+<% @users.each do |user| %>
+    <h2> <%= user.first_name %> </h2>
+    <p> <%= user.transactions %></p>
+    <% user.transactions.each do |transaction| %></p>
+        <%= transaction.amount %>
+        <%= number_to_currency(transaction.amount) %>
+        
+    <% end %>
+<% end %>
+
+
 <%= params %>

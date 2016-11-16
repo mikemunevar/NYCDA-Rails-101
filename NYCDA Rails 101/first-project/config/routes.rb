@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   post('hello' => 'home#index')
   get('contact' => 'home#contact')
   
-  
+  #Create all the CRUD routes for users. This is a areal time saver! #MDM
+  resources(:users)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
